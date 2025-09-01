@@ -1,0 +1,16 @@
+{
+  "name": "nodejs-starter-boilerplate",
+  "version": "1.0.0",
+  "description": "A Node.js starter boilerplate with Express, dotenv, and project structure for controllers, models, and routes.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": ["nodejs", "express", "boilerplate", "starter"],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2",
+    "dotenv": "^16.0.3"
+  }
+}
