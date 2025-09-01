@@ -30,10 +30,12 @@ function main() {
     process.exit(1);
   }
   fs.mkdirSync(projectDir);
+  // Copy from the package root, not from the bin directory
+  const packageRoot = path.resolve(__dirname, '..');
   const exclude = ['node_modules', '.git', 'bin', 'package-lock.json', 'npm-debug.log', '.env', '.DS_Store'];
-  fs.readdirSync(__dirname).forEach((item) => {
+  fs.readdirSync(packageRoot).forEach((item) => {
     if (!exclude.includes(item)) {
-      copyRecursiveSync(path.join(__dirname, item), path.join(projectDir, item));
+      copyRecursiveSync(path.join(packageRoot, item), path.join(projectDir, item));
     }
   });
   console.log(`\nProject created in ${projectDir}`);
