@@ -12,7 +12,7 @@ A Node.js starter boilerplate for building Express applications, with a CLI for 
 
 ## Quick Start (Recommended)
 
-After publishing to npm, you can scaffold a new project using:
+You can scaffold a new project using:
 
 ```sh
 npx nodejs-starter-boilerplate my-app
